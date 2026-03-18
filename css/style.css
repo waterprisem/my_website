@@ -20,6 +20,9 @@ body {
   background-color: #FBF9F1;
 }
 
+main{
+    margin-top: 80px; /* To prevent content from being hidden behind the fixed header */
+}
 
 /* ================================
    TYPOGRAPHY
@@ -56,6 +59,24 @@ a:hover {
   max-width: 1500px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.banner{
+  background-color: #92C7CF;
+  background-size: cover;
+  color: #FBF9F1;
+  text-align: center;
+  position: relative;
+}
+
+.banner-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
 }
 
 .project-card {
@@ -104,9 +125,25 @@ a:hover {
 .social-links {
   display: flex;
   justify-content: center;
-  gap: 24px;
+  gap: 64px;
   margin-top: 16px;
   color: #FBF9F1;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 8px;
+  font-size: 24px;
+  color: #FBF9F1;
+  text-align: center;
+  transition: font-size 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  font-size: 28px;
+  transform: translateY(-4px);
 }
 
 /* ================================
@@ -117,8 +154,13 @@ header {
   background-color: #92C7CF;
   border-bottom: 1px solid #dddddd;
   color: #FBF9F1;
-  padding: 32px 0;
+  padding: 16px 0;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 
 }
 
@@ -135,6 +177,7 @@ nav ul {
   justify-content: flex-end;
   gap: 24px;
   padding: 0 20px;
+  position: relative;
 }
 
 nav ul li a {
