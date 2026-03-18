@@ -1,0 +1,189 @@
+/* ================================
+   RESET & BASE
+   ================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333333;
+  background-color: #FBF9F1;
+}
+
+
+/* ================================
+   TYPOGRAPHY
+   ================================ */
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; color:#92C7CF}
+h3 { font-size: 1.5rem; }
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+/* ================================
+   LAYOUT
+   ================================ */
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.project-card {
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #f9f9f9;
+  min-width: 172px;
+  flex-shrink: 0
+}
+
+.carousel {
+  display: flex;
+  overflow-x: hidden;
+  gap: 16px;
+  padding-bottom: 16px;
+
+}
+
+.carousel-track {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  transition: transform 0.3s ease;
+  scroll-behavior: smooth
+}
+
+.skill-catagories {
+    justify-content: center;
+    overflow-x: auto;
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.skill-category {
+  border: 1px solid #dddddd;
+  border-radius: 16px;
+  padding: 32px;
+  background-color: #92C7CF;
+  flex: 1 1 0;
+  min-width: 0;
+  color: #FBF9F1;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 16px;
+  color: #FBF9F1;
+}
+
+/* ================================
+   HEADER & NAV
+   ================================ */
+
+header {
+  background-color: #92C7CF;
+  border-bottom: 1px solid #dddddd;
+  color: #FBF9F1;
+  padding: 32px 0;
+  align-items: center;
+
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 24px;
+  padding: 0 20px;
+}
+
+nav ul li a {
+  color: #FBF9F1;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #0077cc;
+}
+
+
+/* ================================
+   MAIN CONTENT
+   ================================ */
+
+main {
+  padding: 40px 20px;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+
+/* ================================
+   FOOTER
+   ================================ */
+
+footer {
+  background-color: #AAD7D9;
+  border-top: 1px solid #dddddd;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.875rem;
+  color: #777777;
+}
+
+
+/* ================================
+   RESPONSIVE - MOBILE
+   ================================ */
+
+@media (max-width: 768px) {
+  h1 { font-size: 1.75rem; }
+  h2 { font-size: 1.5rem; }
+
+  nav ul {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
