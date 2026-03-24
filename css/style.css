@@ -35,7 +35,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 { font-size: 2.5rem; }
 h2 { font-size: 2rem; color:#92C7CF}
-h3 { font-size: 1.5rem; }
+h3 { font-size: 1.5rem;}
 
 p {
   margin-bottom: 1rem;
@@ -104,23 +104,59 @@ a:hover {
   scroll-behavior: smooth
 }
 
-.skill-catagories {
-    justify-content: center;
-    overflow-x: auto;
-    display: flex;
-    gap: 24px;
-    flex-wrap: wrap;
-}
-
 .skill-category {
   border: 1px solid #dddddd;
   border-radius: 16px;
   padding: 32px;
   background-color: #92C7CF;
-  flex: 1 1 0;
-  min-width: 0;
   color: #FBF9F1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 20px;
+  align-items: flex-start;
 }
+.skill-category h3 {
+  color: #FBF9F1;
+  width: 100%; /* forces the heading onto its own line above the icons */
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.skill-category {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 36px;
+  width: 90px;
+  gap: 4px;
+}
+
+.skill-item p {
+  font-size: 18px;
+  text-align: center;
+  margin: 0;
+}
+.skill-item li {
+  font-size: 18px;
+  text-align: center;
+  margin: 0;
+}
+.skills-list {
+  list-style: disc;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;}
 
 .social-links {
   display: flex;
@@ -142,9 +178,10 @@ a:hover {
 }
 
 .social-icons a:hover {
-  font-size: 28px;
-  transform: translateY(-4px);
+  transform: scale(1.2);
 }
+
+
 
 /* ================================
    HEADER & NAV
