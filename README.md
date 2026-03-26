@@ -1,4 +1,4 @@
-This is my personal website portfolio! (Technically still wip but this is the general template)
+This is my personal website portfolio! (Technically still wip but this is still complete)
 
 View at: https://waterprisem.github.io/my_website/
 
