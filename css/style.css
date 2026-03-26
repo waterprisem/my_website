@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 { font-size: 2.5rem; }
-h2 { font-size: 2rem; color:#92C7CF}
+h2 { font-size: 2rem; color:#035e6b}
 h3 { font-size: 1.5rem;}
 
 p {
@@ -42,7 +42,7 @@ p {
 }
 
 a {
-  color: #0077cc;
+  color: #035e6b;
   text-decoration: none;
 }
 
@@ -50,6 +50,24 @@ a:hover {
   text-decoration: underline;
 }
 
+table {
+  width: 100%;
+  border-collapse: separate;
+  margin-bottom: 1rem;
+  margin-bottom: 1rem;
+  color: #035e6b;
+  font-family: monospace, sans-serif;
+  border: 1px solid;
+}
+table th, table td {
+  border: 1px solid #035e6b;
+  padding: 16px;
+  text-align: left;
+}
+
+section h3, section h2 {
+  text-align: center;
+}
 
 /* ================================
    LAYOUT
@@ -85,10 +103,20 @@ a:hover {
   padding: 16px;
   background-color: #f9f9f9;
   min-width: 172px;
+  max-width: 400px;
   flex-shrink: 0
 }
 
+.project-image {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
 .carousel {
+  margin-top: 16px;
   display: flex;
   overflow-x: hidden;
   gap: 16px;
@@ -115,6 +143,8 @@ a:hover {
   gap: 16px;
   margin: 20px;
   align-items: flex-start;
+  justify-content: left;
+
 }
 .skill-category h3 {
   color: #FBF9F1;
@@ -124,13 +154,6 @@ a:hover {
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-}
-
-.skill-category {
-  display: flex;
-  justify-content: left;
-  flex-wrap: wrap;
-  margin: 20px;
 }
 
 .skill-item {
@@ -153,17 +176,29 @@ a:hover {
   margin: 0;
 }
 .skills-list {
+  width: 100%;
   list-style: disc;
   padding: 0;
   margin: 0;
-  font-size: 18px;}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  font-size: 1rem;
+  color: #FBF9F1;
+}
+
+.skills-list li {
+  text-align: left;
+}
 
 .social-links {
   display: flex;
+  align-items: center;
   justify-content: center;
   gap: 64px;
   margin-top: 16px;
-  color: #FBF9F1;
+  color: #035e6b;
 }
 
 .social-icons {
@@ -180,6 +215,8 @@ a:hover {
 .social-icons a:hover {
   transform: scale(1.2);
 }
+
+
 
 
 
@@ -223,7 +260,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #0077cc;
+  color: #035e6b;
 }
 
 
@@ -236,6 +273,7 @@ main {
 }
 
 section {
+  scroll-margin-top: 100px;
   margin-bottom: 60px;
 }
 
